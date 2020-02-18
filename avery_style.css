@@ -1,0 +1,63 @@
+/* THIS IS A COMMENT it will not be read in your css */
+
+body{ margin: 0px; }
+a { color: inherit; }
+
+#header h1 { margin: 0px; text-align: center; font: 700 italic 70px/70px Open Sans; text-transform: lowercase; color: lightblue; text-shadow: 2px 2px 0px lightseagreen, 2px -2px 0px lightseagreen, -2px 2px 0px lightseagreen, -2px -2px 0px lightseagreen; letter-spacing: 10px; padding-bottom: 5px; border-bottom: 15px solid lightblue; }
+
+#header p { margin: 50px auto; width: 60%; font: 15px/25px Open Sans; }
+#header a { color: lightseagreen; border-bottom: 1px solid lightseagreen; text-decoration: none; }
+#header b { background: lightseagreen; color: white; padding: 3px; }
+#header i { color: lightseagreen; font-size: 18px; }
+
+#nav { width: 80%; padding: 20px; margin: auto; text-align: center; font: 13px Open Sans; text-transform: uppercase; letter-spacing: 10px; /* word-spacing: 20px; */ }
+#nav a { text-decoration: none; border-bottom: 2px solid lightseagreen; padding-bottom: 5px; margin: 0px 8px; }
+
+/* alt nav */
+#nav { background: lightseagreen; padding: 20px 20px 25px 20px; width: 100%; margin: 0px; text-align: left; font: 13px Open Sans; text-transform: uppercase; letter-spacing: 10px; position: fixed; top: 0px; }
+#nav a { text-decoration: none; border-bottom: 2px solid white; padding-bottom: 5px; margin: 0px 8px; color: white; }
+#header { margin-top: 140px; }
+
+#gallery { display: flex; width: 75vw; margin: auto; margin-top: 40px; justify-content: space-between; align-items: center; margin-bottom: 100px; }
+
+/* unhovered
+.gallery_box { width: 22vw; box-shadow: 7px 7px 0px lightblue, 15px 15px lightseagreen; }
+.gallery_box img { width: 100%; }
+.gallery_box_content { padding: 20px 0px 0px 20px; font: 15px/25px Open Sans; margin: 20px 20px 20px 0px; border-top: 2px solid lightseagreen; border-left: 2px solid lightseagreen;}
+.gallery_box_content h2 { margin: 0px; color: lightseagreen; } */
+
+/* hover styles */
+#nav a { transition: 0.5s all ease-in-out; }
+#nav a:hover { border-color: lightblue; color: lightblue; }
+
+/* hover 1
+.gallery_box { width: 22vw; height: 22vw; box-shadow: 5px 5px 0px white, 15px 15px lightseagreen; position: relative; overflow: hidden;}
+.gallery_box img { width: 100%; }
+.gallery_box_content { font: 20px/20px Open Sans; position: absolute; top: 22vw; left: 0px; height: calc(22vw - 80px); padding: 40px; background: lightblue; overflow: auto; opacity: 0; transition: 0.5s all ease-in-out; }
+.gallery_box_content h2 { margin: 0px; color: white; }
+.gallery_box:hover .gallery_box_content { top: 0px; opacity: 1; } */
+
+/* hover 2
+.gallery_box { width: 22vw; height: 22vw; box-shadow: 5px 5px 0px white, 15px 15px lightseagreen; position: relative; overflow: hidden;}
+.gallery_box img { width: 100%; }
+.gallery_box_content { font: 20px/20px Open Sans; position: absolute; top: 0px; left: 0px; height: calc(22vw - 80px); padding: 40px; background: lightblue; overflow: auto; opacity: 0; transition: 0.5s all ease-in-out;
+
+transform: rotate(720deg) scale(0);
+}
+.gallery_box_content h2 { margin: 0px; color: white; }
+.gallery_box:hover .gallery_box_content { transform: rotate(0deg) scale(1); opacity: 1; } */
+
+/* hover 1 with nicer padding - overflow on the p */
+.gallery_box { width: 22vw; height: 22vw; box-shadow: 5px 5px 0px white, 15px 15px lightseagreen; position: relative; overflow: hidden;}
+.gallery_box img { width: 100%; }
+.gallery_box_content { font: 20px/20px Open Sans; position: absolute; top: 22vw; left: 0px; height: calc(22vw - 80px); padding: 40px; background: lightblue; opacity: 0; transition: 0.5s all ease-in-out; }
+.gallery_box_content h2 { margin: 0px; color: white; }
+.gallery_box_content p { height: 14vw; overflow: auto; }
+.gallery_box:hover .gallery_box_content { top: 0px; opacity: 1; }
+
+/* hover 1 with nicer padding - overflow on everything
+.gallery_box { width: 22vw; height: 22vw; box-shadow: 5px 5px 0px white, 15px 15px lightseagreen; position: relative; overflow: hidden;}
+.gallery_box img { width: 100%; }
+.gallery_box_content { font: 20px/20px Open Sans; position: absolute; top: 20vw; left: 0px; height: 18vw; border: 2vw solid lightblue; background: lightblue; overflow: auto; opacity: 0; transition: 0.5s all ease-in-out; }
+.gallery_box_content h2 { margin: 0px; color: white; }
+.gallery_box:hover .gallery_box_content { top: 0px; opacity: 1; } */
